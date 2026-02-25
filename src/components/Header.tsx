@@ -1,25 +1,24 @@
-import { ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function Header() {
   return (
     <header className="flex items-center justify-between px-8 py-4">
       <div className="flex items-center gap-2">
-        <ФинПотокLogo />
+        <PoolkyLogo />
         <span className="text-lg font-semibold text-white">
-          ФинПоток<sup className="text-xs">™</sup>
+          Poolky
         </span>
       </div>
 
       <nav className="hidden md:flex items-center gap-8">
         <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors">
-          Продукты
-        </a>
-        <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors flex items-center gap-1">
-          Решения <ChevronDown className="h-4 w-4" />
+          Возможности
         </a>
         <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors">
-          Ресурсы
+          Аналитика
+        </a>
+        <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors">
+          Сети
         </a>
         <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors">
           Тарифы
@@ -39,13 +38,13 @@ export function Header() {
   )
 }
 
-function ФинПотокLogo() {
+function PoolkyLogo() {
   return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="8" cy="8" r="3" fill="#8B5CF6" />
-      <circle cx="16" cy="8" r="3" fill="#8B5CF6" opacity="0.6" />
-      <circle cx="8" cy="16" r="3" fill="#8B5CF6" opacity="0.6" />
-      <circle cx="16" cy="16" r="3" fill="#8B5CF6" opacity="0.4" />
+    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="2" y="2" width="10" height="10" rx="3" fill="#8B5CF6" />
+      <rect x="16" y="2" width="10" height="10" rx="3" fill="#8B5CF6" opacity="0.5" />
+      <rect x="2" y="16" width="10" height="10" rx="3" fill="#8B5CF6" opacity="0.5" />
+      <rect x="16" y="16" width="10" height="10" rx="3" fill="#8B5CF6" opacity="0.25" />
     </svg>
   )
 }
